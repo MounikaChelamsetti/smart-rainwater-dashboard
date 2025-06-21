@@ -38,8 +38,7 @@ try:
 except FileNotFoundError:
     st.warning("⚠️ Sample file not found. Make sure 'Date.csv' is in the same GitHub folder.")
 
-📥 Don’t have a file? [👉 Click here to download sample CSV](https://raw.githubusercontent.com/MounikaChelamsetti/smart-rainwater-dashboard/main/Date.csv)
-""")
+
 
 
 # --- LOAD CSV FILE ---
