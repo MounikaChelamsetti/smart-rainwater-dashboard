@@ -25,8 +25,9 @@ Please upload a `.csv` file with these columns:
 - **Date** – format: YYYY-MM-DD  
 - **Rainfall_mm** – daily rainfall in millimeters
 
-📥 Don’t have a file? [Download Sample CSV](https://raw.githubusercontent.com/MounikaChelamsetti/smart-rainwater-dashboard/main/rainfall_predictions.csv)
+📥 Don’t have a file? [👉 Click here to download sample CSV](https://raw.githubusercontent.com/MounikaChelamsetti/smart-rainwater-dashboard/main/Date.csv)
 """)
+
 
 # --- LOAD CSV FILE ---
 uploaded_file = st.file_uploader("📁 Upload your rainfall data (.csv)", type="csv")
