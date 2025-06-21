@@ -24,6 +24,19 @@ st.markdown("""
 Please upload a `.csv` file with these columns:
 - **Date** – format: YYYY-MM-DD  
 - **Rainfall_mm** – daily rainfall in millimeters
+""")
+
+# ✅ Download button for the correct sample file
+try:
+    with open("Date.csv", "rb") as file:
+        st.download_button(
+            label="📥 Click here to download the sample file (Date.csv)",
+            data=file,
+            file_name="Date.csv",  # keep the same name for upload convenience
+            mime="text/csv"
+        )
+except FileNotFoundError:
+    st.warning("⚠️ Sample file not found. Make sure 'Date.csv' is in the same GitHub folder.")
 
 📥 Don’t have a file? [👉 Click here to download sample CSV](https://raw.githubusercontent.com/MounikaChelamsetti/smart-rainwater-dashboard/main/Date.csv)
 """)
